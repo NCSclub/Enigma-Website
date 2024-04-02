@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        text: ['var(--font-outfit)'],
+        title: ['var(--font-vcNudge)'],
+        subtext: ['var(--font-inter)'],
+        link: ['var(--font-poppins)']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
