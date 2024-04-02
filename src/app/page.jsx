@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
+import Sponsors from "@/components/Sponsors";
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Sponsors/>
     </div>
   );
 }
