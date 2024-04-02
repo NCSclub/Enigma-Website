@@ -26,6 +26,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Enigma</title>
+      </head>
       <body
         className={`${outfit.variable} ${vcNudge.variable} ${poppins.variable} ${inter.variable} font-inter`}
       >
