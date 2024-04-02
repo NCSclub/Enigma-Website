@@ -2,8 +2,9 @@ import Sponsors from "@/components/Sponsors";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Sponsors/>
+    
     </div>
   );
 }
