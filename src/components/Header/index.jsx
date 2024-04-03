@@ -27,7 +27,7 @@ const Header = () => {
           />
         </div>
         <div className=" max-lg:hidden">
-          <ul className="text-white font-bold font-text text-sm flex flex-row justify-center gap-10">
+          <ul className="text-white font-text text-sm flex flex-row justify-center gap-10">
             {navbar.map((item) => (
               <button key={item.title}>
                 <Link href={item.link}>
