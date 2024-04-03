@@ -22,7 +22,7 @@ const Sponsors = () => {
 
     return (
       <div className="flex flex-col mb-12   items-center space-y-6  overflow-hidden">
-       <div className="bg-[url('/sponsors/shadow.svg')] p-6 bg-center w-full bg-no-repeat h-full py-12"><h1 className="text-center  text-4xl md:text-6xl  font-semibold ">Sponsors</h1></div> 
+       <div className="bg-[url('/sponsors/shadow.svg')] p-6 bg-center w-full bg-no-repeat h-full py-12"><h1 className="text-center  text-5xl md:text-6xl  font-semibold ">Sponsors</h1></div> 
         <h1 className=" text-center text-2xl  font-semibold   md:text-3xl text-[#AFAFAF]">Heartfelt thanks to our <span className="text-white  font-bold">Sponsors</span> </h1>
 <div className=" space-y-12  space-x-reverse overflow-hidden w-fit 	">
 <div className="" >
