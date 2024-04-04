@@ -10,8 +10,6 @@ const Home = () => {
       <Agenda />
       {/* <Footer /> */}
       
-      <Agenda_v1/>
-      
     </div>
   );
 }
