@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const CountdownTimer = ({ setDisabled }) => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-04-25') - +new Date();
+    const difference = +new Date('2024-04-24') - +new Date();
     if (difference > 0) {
       const seconds = Math.floor((difference / 1000) % 60);
       const minutes = Math.floor((difference / 1000 / 60) % 60);
