@@ -54,17 +54,17 @@ const Hero = () => {
       <section className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
         <div className="flex p-8 lg:p-0 lg:mr-16 justify-center mt-12 lg:mt-0 flex-row lg:space-y-16">
           <div className="flex  justify-start w-1/2 lg:w-auto lg:mr-6 flex-col-reverse space-x-6">
-            <div className="flex  justify-end pr-2 lg:pr-0">
+            <div className="flex  justify-end pr-2 lg:pr-0 relative bottom-4">
               <Image width={100} height={200} src="/imges/hero/arrow.png" />
             </div>
-            <h1 className="font-bold text-lg lg:text-xl text-white w-[240px] lg:w-[260px] mt-6">
+            <h1 className="font-bold text-lg lg:text-xl text-white w-[240px] lg:w-[260px] mt-6 relative bottom-6 text-center">
               REGISTER FOR COMPANY SHOWCASE
             </h1>
           </div>
           <div className="flex justify-end items-end lg:justify-start">
             <Link target="_blank" href="https://meet.google.com/">
               <button
-                className={`flex space-x-2 items-center bg-[#0598CE] p-4 rounded-xl text-3xl font-bold text-white 
+                className={`flex space-x-2 items-center bg-[#0598CE] p-4 rounded-xl text-3xl font-medium text-white 
          ${isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""}`}
                 disabled={isButtonDisabled}
               >
@@ -76,7 +76,7 @@ const Hero = () => {
 
         <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start space-y-5">
           <div className="flex   justify-end items-end w-5/6 relative left-20 lg:left-6 lg:w-auto flex-row-reverse space-x-12 mr-6">
-            <h1 className="font-bold text-lg lg:text-xl text-[#0598CE] pl-6 lg:w-[250px] relative top-6">
+            <h1 className="font-bold  text-center text-lg lg:text-xl text-[#0598CE] pl-6 lg:w-[250px] relative right-10  top-2  ">
               REGISTER FOR IDEATHON
             </h1>
             <Image width={100} height={200} src="/imges/hero/arrow1.png" />
@@ -84,7 +84,7 @@ const Hero = () => {
           <div className="flex justify-start items-start pr-28 lg:pr-0 lg:justify-start">
             <Link target="_blank" href="https://meet.google.com/">
               <button
-                className={` flex space-x-2 w-fit items-center bg-white p-4 rounded-xl text-3xl font-bold text-[#0598CE] ${
+                className={`  flex relative right-9 space-x-2 w-fit items-center bg-white p-4 rounded-xl text-3xl font-[600] text-[#0598CE] ${
                   isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
                 }`}
                 disabled={isButtonDisabled}
