@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
+import AboutTheClubSection from "@/components/AboutTheClubs/index.jsx";
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <AboutTheClubSection/>
     </div>
   );
 }
