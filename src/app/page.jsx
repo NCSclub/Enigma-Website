@@ -1,11 +1,12 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Sponsors from "@/components/Sponsors";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <Hero/>
+    <div className="">
+        <Hero/>
+       <Sponsors/>
+    
     </div>
   );
 }
