@@ -1,43 +1,43 @@
-'use client'
 import { useEffect, useState } from 'react';
 
-const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  function calculateTimeLeft() {
-    const difference = +new Date('2024-04-4') - +new Date();
-    let timeLeft = {};
-
+const CountdownTimer = ({ setDisabled }) => {
+  const calculateTimeLeft = () => {
+    const difference = +new Date('2024-04-25') - +new Date();
     if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
+      const seconds = Math.floor((difference / 1000) % 60);
+      const minutes = Math.floor((difference / 1000 / 60) % 60);
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      return { days, hours, minutes, seconds };
     }
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  };
 
-    return timeLeft;
-  }
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+
+      if (newTimeLeft.days === 0 && newTimeLeft.hours === 0 && newTimeLeft.minutes === 0 && newTimeLeft.seconds === 0) {
+        setDisabled(true);
+      }
     }, 1000);
 
     return () => clearTimeout(timer);
-  });
+  }, [timeLeft, setDisabled]);
 
   const formatTime = (time) => {
-    return time < 10 ? `0${time}` : time;
+    return time < 10 ? `0${time}` : `${time}`;
   };
 
+  const { days, hours, minutes, seconds } = timeLeft;
+  const displayTime = `${days!=0? formatTime(days)+':' : ''}${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+
   return (
-    <div className="text-[65px] text-center text-white font-bold  lg:text-[120px]  ">
-      {timeLeft.days ? `${timeLeft.days}:` : ''}
-      {formatTime(timeLeft.hours)}:
-      {formatTime(timeLeft.minutes)}:
-      {formatTime(timeLeft.seconds)}
+    <div className="text-[65px] text-center text-white font-bold lg:text-[100px]">
+      {displayTime}
     </div>
   );
 };
