@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="flex p-8 lg:p-0 lg:mr-16 justify-center mt-12 lg:mt-0 flex-row lg:space-y-16">
           <div className="flex  justify-start w-1/2 lg:w-auto lg:mr-6 flex-col-reverse space-x-6">
             <div className="flex  justify-end pr-2 lg:pr-0 relative bottom-4">
-              <Image width={100} height={200} src="/imges/hero/arrow.png" />
+              <Image width={100} height={200} src="/imges/hero/arrow.png" alt="" />
             </div>
             <h1 className="font-bold text-lg lg:text-xl text-white w-[240px] lg:w-[260px] mt-6 relative bottom-6 text-center">
               REGISTER FOR COMPANY SHOWCASE
@@ -79,7 +79,7 @@ const Hero = () => {
             <h1 className="font-bold  text-center text-lg lg:text-xl text-[#0598CE] pl-6 lg:w-[250px] relative right-10  top-2  ">
               REGISTER FOR IDEATHON
             </h1>
-            <Image width={100} height={200} src="/imges/hero/arrow1.png" />
+            <Image width={100} height={200} src="/imges/hero/arrow1.png" alt="" />
           </div>
           <div className="flex justify-start items-start pr-28 lg:pr-0 lg:justify-start">
             <Link target="_blank" href="https://meet.google.com/">
