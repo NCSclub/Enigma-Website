@@ -4,13 +4,14 @@ import Image from "next/image.js";
 import navbar from "./navbarContent.js";
 import Link from "next/link.js";
 
-import { GrMenu, GrClose } from "react-icons/gr";
+import { GrMenu } from "react-icons/gr";
 import { useState } from "react";
-import { motion } from 'framer-motion'
-
+import  MobileNavBar  from "./MobileNavBar/index.jsx";
 
 const Header = () => {
   const [isClick, setisClick] = useState(false);
+
+
 
   const toggleNavBar = () => {
     setisClick(!isClick);
@@ -41,29 +42,14 @@ const Header = () => {
         </div>
         <div className=" lg:hidden">
           <button onClick={toggleNavBar}>
-            {isClick ? (
-              <GrClose className="text-white w-8 h-8" />
-            ) : (
-              <GrMenu className="text-white w-8 h-8" />
-            )}
+            <GrMenu className="text-white w-8 h-8" />
           </button>
         </div>
       </div>
-      {isClick && (
-        <div className="w-full z-10 absolute top-[5rem] left-0 bg-[#15153F] rounded-md p-6 flex flex-col gap-8 justify-start lg:hidden">
-          <ul className="text-white font-text text-sm text-start flex flex-col">
-            {navbar.map((item) => (
-              <button key={item.title} className="hover:bg-slate-400 h-12 hover:rounded-md">
-                <Link href={item.link}>
-                  <span>{item.title}</span>
-                </Link>
-              </button>
-            ))}
-          </ul>
-        </div>
-      )}
+      <MobileNavBar isClick={isClick} toggleNavBar={toggleNavBar}/>
     </nav>
   );
 };
 
 export default Header;
+
