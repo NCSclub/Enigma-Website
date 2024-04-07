@@ -1,15 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 import TopArrow from "../../../public/images/Footer/topArrow.svg";
 import NcsLogo from "../../../public/images/Footer/ncsLogo.svg";
 import MacroLogo from "../../../public/images/Footer/macroLogo.svg";
 import EnigmaLogo from "../../../public/images/Footer/EnigmaLogo.svg";
 
+const ClubsSocialMedia = [
+  {
+    NcsLink: "LinkedIn",
+    MarconicsLink: "",
+    icon: <FontAwesomeIcon className="w-5" icon={faLinkedin} />,
+  },
+  {
+    NcsLink: "Instagram",
+    MarconicsLink: "",
+    icon: <FontAwesomeIcon className="w-5" icon={faInstagram} />,
+  },
+  {
+    NcsLink: "Facebook",
+    MarconicsLink: "",
+    icon: <FontAwesomeIcon className="w-5" icon={faFacebook} />,
+  },
+];
+
 const Footer = () => {
   return (
-    <footer className="w-screen h-[20vh] bg-black">
-      <div className="flex p-5 justify-between items-center">
+    <footer className="w-screen h-[30vh] pt-5">
+      <div className="h-1/3 bg-[#009FD9] flex gap-20 max-lg:gap-3 justify-center items-center">
+        <p className="font-text text-white max-lg:hidden">Connect With NCS</p>
+        <ul className="flex gap-7 max-lg:gap-2 justify-center items-center">
+          {ClubsSocialMedia.map((social, index) => (
+            <li key={index}>
+              <Link href={social.NcsLink}>{social.icon}</Link>
+            </li>
+          ))}
+        </ul>
+        <div className="flex flex-row gap-7  max-lg:gap-2 justify-center items-center">
+          <Image
+            className="object-cover"
+            src={NcsLogo}
+            width={40}
+            height={40}
+            alt=""
+          />
+          <Image
+            className="object-cover"
+            src={MacroLogo}
+            width={55}
+            height={55}
+            alt=""
+          />
+        </div>
+        <ul className="flex gap-7 max-lg:gap-2 justify-center items-center">
+          {ClubsSocialMedia.map((social, index) => (
+            <li key={index}>
+              <Link href={social.NcsLink}>{social.icon}</Link>
+            </li>
+          ))}
+        </ul>
+        <p className="font-text text-white max-lg:hidden">Connect With Marconics</p>
+      </div>
+      <div className="flex p-5 h-fit bg-black justify-between items-center">
         <div>
           <Image
             className="object-cover"
@@ -19,29 +77,13 @@ const Footer = () => {
             height={150}
           />
         </div>
-        <div className="flex flex-col gap-5 justify-center">
-          <div className="flex gap-7 justify-center">
-            <Image
-              className="object-cover"
-              src={NcsLogo}
-              width={50}
-              height={50}
-              alt=""
-            />
-            <Image
-              className="object-cover"
-              src={MacroLogo}
-              width={50}
-              height={50}
-              alt=""
-            />
-          </div>
-          <div>
-            <p className="font-subtext text-white max-lg:text-sm">Made with ❤️ by NCS</p>
-          </div>
+        <div className="flex flex-col gap-5 max-lg:gap-5 justify-center">
+          <p className="font-subtext text-white max-lg:text-sm">
+            Made with ❤️ by NCS
+          </p>
         </div>
         <div>
-          <button className="hover:bg-slate-400 hover:rounded-md p-2">
+          <button className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden">
             <Link href="/" className="flex gap-2">
               <span className="text-white font-text font-bold max-lg:text-sm">
                 Back to the top
