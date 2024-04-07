@@ -15,7 +15,7 @@ const AboutTheClubSection = () => {
           <Card logo={marconics} desc="Marconics Club, founded in April 2023, is a non-profit organization preparing students for careers through company visits and events on entrepreneurship, marketing, and supply chain management." image={pic2} width={60}/>
         </div>
         <div className='grid grid-cols-1 gap-y-64 md:hidden'>
-          <Card logo={ncs} desc="The CS club aims to create an inclusive platform for tech enthusiasts to improve their skills and knowledge in computer science. They offer workshops, collaborative projects, and discussions to foster growth for both beginners and experts." image={pic1} width={40}/>
+          <Card logo={ncs} desc="The NCS club aims to create an inclusive platform for tech enthusiasts to improve their skills and knowledge in computer science. They offer workshops, collaborative projects, and discussions to foster growth for both beginners and experts." image={pic1} width={40}/>
           <Card logo={marconics} desc="Marconics Club, founded in April 2023, is a non-profit organization preparing students for careers through company visits and events on entrepreneurship, marketing, and supply chain management." image={pic2} width={60}/>
         </div>
       </div>
