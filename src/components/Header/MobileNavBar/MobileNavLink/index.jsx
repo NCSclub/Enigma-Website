@@ -23,7 +23,9 @@ const MobileNavLink = ({ item }) => {
     <div key={item.index} className="overflow-hidden">
       <motion.button
         variants={mobileLinkVars}
-        className="hover:bg-slate-400 text-start h-12 hover:rounded-md"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="hover:bg-slate-400 text-start h-12 hover:rounded-md w-full pl-5"
       >
         <Link href={item.link}>
           <span>{item.title}</span>
