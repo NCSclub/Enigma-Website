@@ -3,15 +3,14 @@
 import Image from "next/image.js";
 import navbar from "./navbarContent.js";
 import Link from "next/link.js";
+import { motion } from "framer-motion";
 
 import { GrMenu } from "react-icons/gr";
 import { useState } from "react";
-import  MobileNavBar  from "./MobileNavBar/index.jsx";
+import MobileNavBar from "./MobileNavBar/index.jsx";
 
 const Header = () => {
   const [isClick, setisClick] = useState(false);
-
-
 
   const toggleNavBar = () => {
     setisClick(!isClick);
@@ -32,11 +31,15 @@ const Header = () => {
         <div className=" max-lg:hidden">
           <ul className="text-white font-text text-sm flex flex-row justify-center gap-10">
             {navbar.map((item) => (
-              <button key={item.title}>
+              <motion.button
+                key={item.title}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Link href={item.link}>
                   <span>{item.title}</span>
                 </Link>
-              </button>
+              </motion.button>
             ))}
           </ul>
         </div>
@@ -46,10 +49,9 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <MobileNavBar isClick={isClick} toggleNavBar={toggleNavBar}/>
+      <MobileNavBar isClick={isClick} toggleNavBar={toggleNavBar} />
     </nav>
   );
 };
 
 export default Header;
-
