@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const WhyWaitSection = () => {
   return (
-    <section className="w-screen h-[30vh] flex justify-center items-center gap-10 p-5">
+    <section className="w-screen h-[25vh] flex justify-center items-center gap-10 p-5">
       <div>
         <Image
           alt=""
