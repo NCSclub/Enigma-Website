@@ -14,7 +14,8 @@ module.exports = {
         link: ['var(--font-poppins)']
       },
       backgroundImage: {
-          "blueborder":"url('/images/hero/bgtext.png')"
+          "blueborder":"url('/images/hero/bgtext.png')",
+          "text-shadow": "url('/images/sponsors/shadow.svg')",
       },
     },
   },
