@@ -1,8 +1,10 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Agenda from "@/components/Agenda";
 import Sponsors from "@/components/Sponsors";
 import WhyWaitSection from "@/components/WhyWaitSection";
+import Footer from "@/components/Footer";
+
 
 export const metadata = {
   title: "Enigma",
@@ -16,6 +18,7 @@ const Home = () => {
     <div className="overflow-hidden relative">
       <Header /> 
       <Hero/>
+      <Agenda/>
       <Sponsors/>
       <WhyWaitSection/>
       <Footer />
