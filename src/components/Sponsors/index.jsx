@@ -18,7 +18,7 @@ const Sponsors = () => {
 
   return (
     <div className="flex flex-col mb-12 mt-24   items-center space-y-6  overflow-hidden">
-      <div className="bg-[url('/sponsors/shadow.svg')] p-6 bg-center w-full bg-no-repeat h-full py-12">
+      <div className="bg-text-shadow text-white font-text  p-6 bg-center w-full bg-no-repeat h-full py-12">
         <h1 className="text-center  text-5xl md:text-6xl  font-semibold ">
           Sponsors
         </h1>
