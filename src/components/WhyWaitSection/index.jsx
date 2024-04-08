@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 
 const WhyWaitSection = () => {
   return (
-    <section className="w-screen h-[25vh] flex justify-center items-center gap-10 p-5">
+    <section className="w-screen h-[80vh] flex justify-center items-center gap-10 p-5">
       <div>
         <Image
           alt=""
           src="/images/WhyWait/whywait.svg"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
       </div>
       <div>
