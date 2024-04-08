@@ -73,7 +73,7 @@ const Footer = () => {
           Connect With Marconics
         </p>
       </div>
-      <div className="flex p-5 h-fit bg-black justify-between items-center">
+      <div className="flex p-5 h-2/3 bg-black justify-between items-center">
         <div>
           <Image
             className="object-cover"
@@ -92,7 +92,7 @@ const Footer = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden"
+            className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden relative right-5"
           >
             <Link href="/" className="flex gap-2">
               <span className="text-white font-text font-bold max-lg:text-sm">
