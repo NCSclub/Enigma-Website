@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -14,18 +18,18 @@ import EnigmaLogo from "../../../public/images/Footer/EnigmaLogo.svg";
 
 const ClubsSocialMedia = [
   {
-    NcsLink: "LinkedIn",
-    MarconicsLink: "",
+    NcsLink: "/",
+    MarconicsLink: "/",
     icon: <FontAwesomeIcon className="w-5" icon={faLinkedin} />,
   },
   {
-    NcsLink: "Instagram",
-    MarconicsLink: "",
+    NcsLink: "/",
+    MarconicsLink: "/",
     icon: <FontAwesomeIcon className="w-5" icon={faInstagram} />,
   },
   {
-    NcsLink: "Facebook",
-    MarconicsLink: "",
+    NcsLink: "/",
+    MarconicsLink: "/",
     icon: <FontAwesomeIcon className="w-5" icon={faFacebook} />,
   },
 ];
@@ -65,7 +69,9 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <p className="font-text text-white max-lg:hidden">Connect With Marconics</p>
+        <p className="font-text text-white max-lg:hidden">
+          Connect With Marconics
+        </p>
       </div>
       <div className="flex p-5 h-fit bg-black justify-between items-center">
         <div>
@@ -83,14 +89,18 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <button className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden"
+          >
             <Link href="/" className="flex gap-2">
               <span className="text-white font-text font-bold max-lg:text-sm">
                 Back to the top
               </span>
               <Image alt="" src={TopArrow} />
             </Link>
-          </button>
+          </motion.button>
         </div>
       </div>
     </footer>
