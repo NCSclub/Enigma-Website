@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="w-screen px-5 py-7 h-[10vh]">
+    <nav className="w-screen px-10 py-7 h-[10vh]">
       <div className="flex justify-between items-center gap-8">
         <div>
           <Image
@@ -29,7 +29,7 @@ const Header = () => {
           />
         </div>
         <div className=" max-lg:hidden">
-          <ul className="text-white font-text text-sm flex flex-row justify-center gap-10">
+          <ul className="text-white font-text text-sm flex flex-row justify-center gap-10 relative right-12">
             {navbar.map((item) => (
               <motion.button
                 key={item.title}
