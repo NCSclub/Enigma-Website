@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
           "blueborder":"url('/images/hero/bgtext.png')",
           "text-shadow": "url('/images/sponsors/shadow.svg')",
+        'title-shadow': "url('/images/Agenda/titleShadow.svg')"
       },
     },
   },
