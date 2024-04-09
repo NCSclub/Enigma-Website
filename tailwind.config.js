@@ -14,9 +14,10 @@ module.exports = {
         link: ['var(--font-poppins)']
       },
       backgroundImage: {
-          "blueborder":"url('/images/hero/bgtext.png')",
-          "text-shadow": "url('/images/sponsors/shadow.svg')",
-        'title-shadow': "url('/images/Agenda/titleShadow.svg')"
+        "blueborder":"url('/images/hero/bgtext.png')",
+        'title-shadow': "url('/images/Agenda/titleShadow.svg')",
+        "header-shadow": "url('/images/vector21.svg')",
+        "footer-shadow": "url('/images/vector2.svg')",
       },
     },
   },
