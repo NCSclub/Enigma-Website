@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { ReactTyped } from "react-typed";
 
 import { FaArrowRight } from "react-icons/fa";
 import { GrMapLocation } from "react-icons/gr";
@@ -10,6 +11,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { motion } from "framer-motion";
 
 import CountdownTimer from "./CountDown";
+import { tree } from "next/dist/build/templates/app-page";
 
 const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
@@ -18,15 +20,18 @@ const Hero = () => {
     <div className="">
       <div className="flex flex-col justify-center  lg:leading-[90px]">
         <p className="flex flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
-          <span className="text-7xl lg:text-8xl font-title">A</span>
+          <span className="text-7xl lg:text-8xl font-title">Start where</span>
           <span className="text-[#0485B9] bg-blueborder bg-center text-center bg-no-repeat bg-contain lg:px-6 flex justify-center items-center">
             <span className="text-5xl p-2 lg:text-6xl flex items-center justify-center font-title lg:p-2">
-              CREATIVE
+            You are
             </span>
           </span>
         </p>
         <p className="text-white justify-center lg:mt-10 leading-[75px] text-5xl lg:text-[70px] leading-non  text-center font-bold font-title">
-          THAT DRIVES ENGAGEMENT
+        <ReactTyped
+          strings={["Use what you have","Do what you can"]}
+          typeSpeed={60}
+        />
         </p>
       </div>
       <div className="flex  flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-12 w-full lg:mt-[40px]">
