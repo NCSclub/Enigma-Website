@@ -2,7 +2,7 @@
 const navbar = [
     {
       title: "Contributors",
-      link: "/"
+      link: "#aboutTheClubs"
     },
     {
       title: "Agenda",
