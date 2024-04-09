@@ -29,7 +29,7 @@ const Agenda = () => {
   };
 
   return (
-    <section className="h-fit w-screen text-white px-10">
+    <section id="agenda" className="h-fit w-screen text-white px-10">
       <div className="h-full w-full flex flex-col justify-center items-center gap-10">
         <div className="h-fit w-full py-20 bg-title-shadow bg-contain bg-center bg-no-repeat flex justify-center items-center">
           <h1 className="font-text font-semibold text-center text-5xl max-lg:text-4xl">Enigma Agenda</h1>
