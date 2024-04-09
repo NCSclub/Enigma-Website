@@ -7,7 +7,7 @@ import { memo } from "react";
 
 const WhyWaitSection = memo(() => {
   return (
-    <section className="w-screen h-[80vh] flex justify-center items-center gap-10 px-10">
+    <section className="w-screen h-[40vh] flex justify-center items-center gap-10 px-10">
       <div>
         <Image
           alt=""
