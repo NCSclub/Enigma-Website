@@ -14,11 +14,11 @@ module.exports = {
         link: ['var(--font-poppins)']
       },
       backgroundImage: {
-       "b-title": "url('/images/AboutTheClubs/shadow.svg')"
-        "blueborder":"url('/images/hero/bgtext.png')",
-        'title-shadow': "url('/images/Agenda/titleShadow.svg')",
-        "header-shadow": "url('/images/vector21.svg')",
-        "footer-shadow": "url('/images/vector2.svg')",
+       "b-title": "url('/images/AboutTheClubs/shadow.svg')",
+       "blueborder":"url('/images/hero/bgtext.png')",
+       "title-shadow": "url('/images/Agenda/titleShadow.svg')",
+       "header-shadow": "url('/images/vector21.svg')",
+       "footer-shadow": "url('/images/vector2.svg')",
       },
     },
   },
