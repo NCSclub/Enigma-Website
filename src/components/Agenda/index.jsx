@@ -36,11 +36,11 @@ const Agenda = () => {
         <div className="h-fit w-full py-20 bg-title-shadow bg-contain bg-center bg-no-repeat flex justify-center items-center">
           <h1 className="font-text font-semibold text-center text-5xl max-lg:text-4xl">Enigma Agenda</h1>
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-16 max-lg:gap-5">
           <MemoizedButton onClick={() => handleButtonClick(1)}>DAY1</MemoizedButton>
           <MemoizedButton onClick={() => handleButtonClick(2)}>DAY2</MemoizedButton>
         </div>
-        <div className="h-fit w-fit px-16 py-10 bg-[#15153F] rounded-lg flex justify-center max-md:flex-wrap items-center gap-5">
+        <div className="h-fit w-fit px-7 py-10 bg-[#15153F] rounded-lg flex justify-center max-md:flex-wrap items-center gap-5">
           {memoizedAgenda[index].time.map((time, i) => (
             <MemoizedAgendaItem
               key={i}
