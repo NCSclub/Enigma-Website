@@ -6,7 +6,7 @@ const navbar = [
     },
     {
       title: "Agenda",
-      link: "/"
+      link: "#agenda"
     },
     {
       title: "About ENIGMA",
@@ -14,11 +14,11 @@ const navbar = [
     },
     {
       title: "Sponsors",
-      link: "/"
+      link: "#sponsors"
     },
     {
       title: "Contact us",
-      link: "/"
+      link: "#footer"
     },
   ]
   
