@@ -20,23 +20,23 @@ const ClubsSocialMedia = [
   {
     NcsLink: "/",
     MarconicsLink: "/",
-    icon: <FontAwesomeIcon className="w-5" icon={faLinkedin} />,
+    icon: <FontAwesomeIcon className="w-7 h-7" icon={faLinkedin} />,
   },
   {
     NcsLink: "/",
     MarconicsLink: "/",
-    icon: <FontAwesomeIcon className="w-5" icon={faInstagram} />,
+    icon: <FontAwesomeIcon className="w-7 h-7" icon={faInstagram} />,
   },
   {
     NcsLink: "/",
     MarconicsLink: "/",
-    icon: <FontAwesomeIcon className="w-5" icon={faFacebook} />,
+    icon: <FontAwesomeIcon className="w-7 h-7" icon={faFacebook} />,
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="w-screen h-[30vh]">
+    <footer id="footer" className="w-screen h-[30vh]">
       <div className="h-1/3 bg-[#009FD9] flex gap-20 max-lg:gap-3 justify-center items-center">
         <p className="font-text text-white max-lg:hidden">Connect With NCS</p>
         <ul className="flex gap-7 max-lg:gap-2 justify-center items-center">
@@ -94,12 +94,12 @@ const Footer = () => {
             whileTap={{ scale: 0.95 }}
             className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden relative right-5"
           >
-            <Link href="/" className="flex gap-2">
+            <a href="#hero" className="flex gap-2">
               <span className="text-white font-text font-bold max-lg:text-sm">
                 Back to the top
               </span>
               <Image alt="" src={TopArrow} />
-            </Link>
+            </a>
           </motion.button>
         </div>
       </div>
