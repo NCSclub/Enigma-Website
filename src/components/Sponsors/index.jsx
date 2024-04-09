@@ -17,7 +17,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center space-y-6 overflow-hidden">
+    <section id="sponsors" className="flex flex-col items-center space-y-6 overflow-hidden">
       <div className="h-fit w-full py-20 bg-title-shadow bg-contain bg-center bg-no-repeat flex justify-center items-center">
         <h1 className="font-text font-semibold text-center text-5xl text-white">
           Sponsors
@@ -83,7 +83,7 @@ const Sponsors = () => {
           </Marquee>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

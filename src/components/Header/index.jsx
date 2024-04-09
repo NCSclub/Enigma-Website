@@ -36,9 +36,9 @@ const Header = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href={item.link}>
+                <a href={item.link}>
                   <span>{item.title}</span>
-                </Link>
+                </a>
               </motion.button>
             ))}
           </ul>

@@ -15,7 +15,7 @@ const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-    <div className="overflow-hidden">
+    <section id="hero" className="overflow-hidden">
       <div className="flex flex-col justify-center mt-10 lg:leading-[90px]">
         <p className="flex flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
           <span className="text-7xl lg:text-7xl font-title">A</span>
@@ -115,7 +115,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 
