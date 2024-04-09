@@ -17,9 +17,9 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="flex flex-col mb-12 mt-24   items-center space-y-6  overflow-hidden">
-      <div className="bg-text-shadow text-white font-text  p-6 bg-center w-full bg-no-repeat h-full py-12">
-        <h1 className="text-center  text-5xl md:text-6xl  font-semibold ">
+    <div className="flex flex-col items-center space-y-6 overflow-hidden">
+      <div className="h-fit w-full py-20 bg-title-shadow bg-contain bg-center bg-no-repeat flex justify-center items-center">
+        <h1 className="font-text font-semibold text-center text-5xl text-white">
           Sponsors
         </h1>
       </div>

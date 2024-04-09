@@ -29,16 +29,16 @@ const Agenda = () => {
   };
 
   return (
-    <section className="h-fit w-screen text-white p-7">
+    <section className="h-fit w-screen text-white px-10">
       <div className="h-full w-full flex flex-col justify-center items-center gap-10">
-        <div className="h-24 w-96 bg-title-shadow bg-cover flex justify-center items-center">
-          <h1 className="font-text text-4xl">Our event Agenda</h1>
+        <div className="h-fit w-full py-20 bg-title-shadow bg-contain bg-center bg-no-repeat flex justify-center items-center">
+          <h1 className="font-text font-semibold text-center text-5xl max-lg:text-4xl">Enigma Agenda</h1>
         </div>
         <div className="flex gap-5">
           <Button onClick={() => handleButtonClick(1)}>DAY1</Button>
           <Button onClick={() => handleButtonClick(2)}>DAY2</Button>
         </div>
-        <div className="h-fit w-fit p-5 bg-[#15153F] rounded-lg flex justify-center max-md:flex-wrap items-center gap-3">
+        <div className="h-fit w-fit px-16 py-10 bg-[#15153F] rounded-lg flex justify-center max-md:flex-wrap items-center gap-5">
           {agenda[index].time.map((time, i) => (
             <AgendaItem
               key={i}

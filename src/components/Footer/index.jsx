@@ -36,7 +36,7 @@ const ClubsSocialMedia = [
 
 const Footer = () => {
   return (
-    <footer className="w-screen h-[30vh] pt-5">
+    <footer className="w-screen h-[30vh]">
       <div className="h-1/3 bg-[#009FD9] flex gap-20 max-lg:gap-3 justify-center items-center">
         <p className="font-text text-white max-lg:hidden">Connect With NCS</p>
         <ul className="flex gap-7 max-lg:gap-2 justify-center items-center">
