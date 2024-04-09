@@ -53,14 +53,14 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <section className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
+      <div className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
         <div className="flex p-8 lg:p-0 lg:mr-16 justify-center mt-12 lg:mt-0 flex-row lg:space-y-16 pr-28">
           <div className="flex  justify-start w-1/2 lg:w-auto lg:mr-6 flex-col-reverse space-x-6">
             <div className="flex  justify-end pr-2 lg:pr-0 relative bottom-4">
               <Image
                 width={100}
                 height={200}
-                src="/imges/hero/arrow.png"
+                src="/images/hero/arrow.png"
                 alt=""
               />
             </div>
@@ -92,7 +92,7 @@ const Hero = () => {
             <Image
               width={100}
               height={200}
-              src="/imges/hero/arrow1.png"
+              src="/images/hero/arrow1.png"
               alt=""
             />
           </div>
@@ -114,7 +114,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };
