@@ -17,15 +17,12 @@ const poppins = Poppins({
 });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-export const metadata = {
-  title: "Enigma",
-  description:
-    "Enigma is a Startup Extchange hosted in NIT by NCS & Marconics Club",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Enigma</title>
+      </head>
       <body
         className={`${outfit.variable} ${vcNudge.variable} ${poppins.variable} ${inter.variable} font-inter`}
       >

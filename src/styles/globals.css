@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-    --bg-main: #010326
+    --bg-main: #010326;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
