@@ -15,12 +15,12 @@ const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-    <div className="overflow-hidden">
-      <div className="flex flex-col justify-center mt-10 lg:leading-[90px]">
+    <div className="">
+      <div className="flex flex-col justify-center  lg:leading-[90px]">
         <p className="flex flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
-          <span className="text-7xl lg:text-7xl font-title">A</span>
+          <span className="text-7xl lg:text-8xl font-title">A</span>
           <span className="text-[#0485B9] bg-blueborder bg-center text-center bg-no-repeat bg-contain lg:px-6 flex justify-center items-center">
-            <span className="text-6xl p-2 lg:text-5xl flex items-center justify-center font-title lg:p-2">
+            <span className="text-5xl p-2 lg:text-6xl flex items-center justify-center font-title lg:p-2">
               CREATIVE
             </span>
           </span>
@@ -29,8 +29,8 @@ const Hero = () => {
           THAT DRIVES ENGAGEMENT
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-4 lg:mt-[40px]">
-        <div className={isButtonDisabled ? " hidden" : "block"}>
+      <div className="flex  flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-12 w-full lg:mt-[40px]">
+        <div className={` lg:w-[40%]  ${isButtonDisabled ? " hidden" : "block"}`}>
           <CountdownTimer setDisabled={setButtonDisabled} />
         </div>
         <div className={!isButtonDisabled ? " hidden" : "block"}>
@@ -60,7 +60,7 @@ const Hero = () => {
               <Image
                 width={100}
                 height={200}
-                src="/imges/hero/arrow.png"
+                src="/images/hero/arrow.png"
                 alt=""
               />
             </div>
@@ -92,7 +92,7 @@ const Hero = () => {
             <Image
               width={100}
               height={200}
-              src="/imges/hero/arrow1.png"
+              src="/images/hero/arrow1.png"
               alt=""
             />
           </div>
