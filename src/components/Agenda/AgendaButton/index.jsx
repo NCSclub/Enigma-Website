@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { memo } from "react";
 
-const Button = ({ onClick, children }) => (
+const MemoizedButton = memo(({ onClick, children }) => (
   <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.95 }}
@@ -11,6 +12,10 @@ const Button = ({ onClick, children }) => (
   >
     {children}
   </motion.button>
-);
+));
 
-export default Button;
+// Set the displayName for MemoizedButton component
+MemoizedButton.displayName = 'Button';
+
+export default MemoizedButton;
+

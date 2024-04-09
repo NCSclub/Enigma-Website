@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { memo } from "react";
 
-const WhyWaitSection = () => {
+const WhyWaitSection = memo(() => {
   return (
     <section className="w-screen h-[80vh] flex justify-center items-center gap-10 px-10">
       <div>
@@ -26,6 +27,8 @@ const WhyWaitSection = () => {
       </div>
     </section>
   );
-};
+});
+
+WhyWaitSection.displayName = 'WhyWaitSection';
 
 export default WhyWaitSection;

@@ -3,9 +3,10 @@ import navbar from "../navbarContent.js";
 import { GrClose } from "react-icons/gr";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileNavLink from "./MobileNavLink/index.jsx";
+import { useMemo } from "react";
 
 const MobileNavBar = ({ isClick, toggleNavBar }) => {
-  const menuVars = {
+  const menuVars = useMemo(() => ({
     initial: {
       scaleX: 0,
     },
@@ -23,9 +24,9 @@ const MobileNavBar = ({ isClick, toggleNavBar }) => {
         ease: [0.12, 0, 0, 39, 1],
       },
     },
-  };
+  }), []);
 
-  const containerVars = {
+  const containerVars = useMemo(() => ({
     initial: {
       transition: {
         staggerChildren: 0.09,
@@ -39,7 +40,7 @@ const MobileNavBar = ({ isClick, toggleNavBar }) => {
         staggerDirection: 1,
       },
     },
-  };
+  }), []);
 
   return (
     <AnimatePresence>

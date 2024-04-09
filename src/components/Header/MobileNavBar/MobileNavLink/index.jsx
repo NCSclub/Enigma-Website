@@ -1,8 +1,9 @@
 import Link from "next/link.js";
 import { motion } from "framer-motion";
+import { memo, useMemo } from "react";
 
 const MobileNavLink = ({ item }) => {
-  const mobileLinkVars = {
+  const mobileLinkVars = useMemo(() => ({
     initial: {
       y: "30vh",
       transition: {
@@ -17,7 +18,7 @@ const MobileNavLink = ({ item }) => {
         duration: 0.7,
       },
     },
-  };
+  }), []);
 
   return (
     <div key={item.index} className="overflow-hidden">
@@ -35,4 +36,4 @@ const MobileNavLink = ({ item }) => {
   );
 };
 
-export default MobileNavLink;
+export default memo(MobileNavLink);
