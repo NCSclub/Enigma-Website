@@ -5,6 +5,7 @@ import Agenda from "@/components/Agenda";
 import Sponsors from "@/components/Sponsors";
 import WhyWaitSection from "@/components/WhyWaitSection";
 import Footer from "@/components/Footer";
+import AboutTheEventSection from "@/components/AboutTheEvent";
 
 export const metadata = {
   title: "Enigma",
@@ -19,6 +20,7 @@ const Home = () => {
         <Header />
         <Hero />
         <AboutTheClubsSection />
+        <AboutTheEventSection/>
         <Agenda />
       </div>
       <div className="flex flex-col gap-32 bg-footer-shadow bg-left bg-no-repeat">
