@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const AboutTheEventSection = () => {
   return (
-    <section>
-      <div className="bg-[url('/sponsors/shadow.svg')] mb-12 p-6 bg-center w-full bg-no-repeat h-full py-12">
+    <section className="text-white">
+      <div className="bg-title-shadow mb-12 p-6 bg-center w-full bg-no-repeat h-full py-12">
         <h1 className="text-center  text-5xl md:text-6xl  font-semibold ">
           About Enigma{" "}
         </h1>
