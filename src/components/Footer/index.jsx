@@ -94,7 +94,7 @@ const Footer = () => {
             whileTap={{ scale: 0.95 }}
             className="hover:bg-slate-400 hover:rounded-md p-2 max-lg:hidden relative right-5"
           >
-            <a href="#hero" className="flex gap-2">
+            <a href="#navbar" className="flex gap-2">
               <span className="text-white font-text font-bold max-lg:text-sm">
                 Back to the top
               </span>
