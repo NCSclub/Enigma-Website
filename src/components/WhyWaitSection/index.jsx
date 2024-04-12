@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { memo } from "react";
 
@@ -22,7 +21,7 @@ const WhyWaitSection = memo(() => {
           whileTap={{ scale: 0.95 }}
           className="w-36 h-14 max-lg:w-32 max-lg:h-10 font-text bg-[#0598CE] rounded-lg text-white text-center hover:bg-[#0598cea2]"
         >
-          <Link href="/">Register</Link>
+          <a href="#navbar">Register</a>
         </motion.button>
       </div>
     </section>
