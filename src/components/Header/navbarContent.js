@@ -5,12 +5,12 @@ const navbar = [
       link: "#aboutTheClubs"
     },
     {
-      title: "Agenda",
-      link: "#agenda"
+      title: "About ENIGMA",
+      link: "#aboutTheEvent"
     },
     {
-      title: "About ENIGMA",
-      link: "/"
+      title: "Agenda",
+      link: "#agenda"
     },
     {
       title: "Sponsors",
