@@ -15,7 +15,7 @@ const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-    <div className="pb-32">
+    <section id="hero" className="">
       <div className="flex flex-col justify-center  lg:leading-[90px]">
         <p className="flex flex-col  items-center lg:flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
           <span className="text-6xl lg:text-8xl font-title">Join the</span>
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       <div className="flex  flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-12 w-full lg:mt-[40px]">
         <div className={` lg:w-[40%]  ${isButtonDisabled ? " hidden" : "block"}`}>
-          <CountdownTimer setDisabled={setButtonDisabled} />
+        <CountdownTimer setDisabled={setButtonDisabled} initialTime="2024-04-24" />
         </div>
         <div className={!isButtonDisabled ? " hidden" : "block"}>
           <h1 className="text-[65px] text-center text-white font-bold  lg:text-[100px] ">
@@ -59,7 +59,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <section className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
+      <div className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
         <div className="flex p-8 lg:p-0 lg:mr-16 justify-center mt-12 lg:mt-0 flex-row lg:space-y-16 pr-28">
           <div className="flex  justify-start w-1/2 lg:w-auto lg:mr-6 flex-col-reverse space-x-6">
             <div className="flex  justify-end pr-2 lg:pr-0 relative bottom-4">
@@ -75,7 +75,7 @@ const Hero = () => {
             </h1>
           </div>
           <div className="flex justify-end items-end lg:justify-start">
-            <Link target="_blank" href="https://meet.google.com/">
+            <Link target="_blank" href="https://tripetto.app/run/BFO62YXV93">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -103,7 +103,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex justify-start items-start pr-28 lg:pr-0 lg:justify-start">
-            <Link target="_blank" href="https://meet.google.com/">
+            <Link target="_blank" href="https://tripetto.app/run/F8Z3HGN1AM">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -120,8 +120,8 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
