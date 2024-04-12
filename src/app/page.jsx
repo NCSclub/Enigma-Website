@@ -17,8 +17,10 @@ const Home = () => {
   return (
     <div className="overflow-hidden relative flex flex-col gap-32">
       <div className="flex flex-col gap-32 bg-header-shadow bg-right-top bg-no-repeat">
+       <div className="  flex flex-col gap-12 ">
         <Header />
         <Hero />
+        </div>
         <AboutTheClubsSection />
         <AboutTheEventSection/>
         <Agenda />
