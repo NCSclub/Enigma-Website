@@ -10,7 +10,7 @@ const AboutTheEventSection = () => {
       </div>
       <div className="flex justify-center px-5">
         <div className="hidden md:flex ">
-          <Image alt="" src="/aboutEvent/1.png" width={500} height={500} />
+          <Image alt="" src="/images/aboutEvent/1.png" width={500} height={500} />
         </div>
         <div className="flex flex-col justify-center  items-center gap-5 md:w-1/2 ">
           <div className="flex justify-start items-start">
@@ -26,12 +26,12 @@ const AboutTheEventSection = () => {
         </div>
       </div>
       <div className=" md:hidden flex mt-12 justify-center items-center px-5">
-        <Image alt="" src="/aboutEvent/phone.png" width={500} height={500} />
+        <Image alt="" src="/images/aboutEvent/phone.png" width={500} height={500} />
       </div>
 
       <div className="flex flex-row-reverse justify-center mt-12 lg:mt-6 px-5">
         <div className="hidden md:flex">
-          <Image alt="" src="/aboutEvent/2.png" width={500} height={500} />
+          <Image alt="" src="/images/aboutEvent/2.png" width={500} height={500} />
         </div>
         <div className="flex flex-col justify-center items-center gap-5 md:w-1/2 ">
           <div className="flex justify-start items-start">
