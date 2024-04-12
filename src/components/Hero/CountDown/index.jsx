@@ -43,7 +43,7 @@ const CountdownTimer = ({ setDisabled }) => {
   )}:${formatTime(minutes)}:${formatTime(seconds)}`;
 
   return (
-    <div className="text-[65px] text-center text-white font-bold lg:text-[100px]">
+    <div className="text-[60px]  text-center text-white font-bold lg:text-[90px]">
       {displayTime}
     </div>
   );
