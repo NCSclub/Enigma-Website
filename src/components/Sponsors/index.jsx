@@ -4,14 +4,14 @@ import Marquee from "react-fast-marquee";
 
 const Sponsors = () => {
   const logosData = [
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
 
     // Add more links and paths as needed
   ];
