@@ -3,34 +3,40 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
 import { GrMapLocation } from "react-icons/gr";
-
 import { motion } from "framer-motion";
-
 import CountdownTimer from "./CountDown";
+
+
 
 const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-    <section id="hero" className="overflow-hidden">
-      <div className="flex flex-col justify-center mt-10 lg:leading-[90px]">
-        <p className="flex flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
-          <span className="text-7xl lg:text-7xl font-title">A</span>
+    <div className="pb-32">
+      <div className="flex flex-col justify-center  lg:leading-[90px]">
+        <p className="flex flex-col  items-center lg:flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
+          <span className="text-6xl lg:text-8xl font-title">Join the</span>
+          <br/>
           <span className="text-[#0485B9] bg-blueborder bg-center text-center bg-no-repeat bg-contain lg:px-6 flex justify-center items-center">
-            <span className="text-6xl p-2 lg:text-5xl flex items-center justify-center font-title lg:p-2">
-              CREATIVE
+            <span className="text-6xl p-3 lg:p-4 lg:text-6xl flex items-center justify-center font-title ">
+            Movement
             </span>
           </span>
         </p>
         <p className="text-white justify-center lg:mt-10 leading-[75px] text-5xl lg:text-[70px] leading-non  text-center font-bold font-title">
-          THAT DRIVES ENGAGEMENT
+        Crafting the Future{' '}
+        <ReactTyped
+          strings={[" Today"," for ever"]}
+          typeSpeed={90}
+          loop={true}
+        />
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-4 lg:mt-[40px]">
-        <div className={isButtonDisabled ? " hidden" : "block"}>
+      <div className="flex  flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-12 w-full lg:mt-[40px]">
+        <div className={` lg:w-[40%]  ${isButtonDisabled ? " hidden" : "block"}`}>
           <CountdownTimer setDisabled={setButtonDisabled} />
         </div>
         <div className={!isButtonDisabled ? " hidden" : "block"}>
@@ -53,7 +59,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
+      <section className="flex flex-col-reverse lg:flex-row lg:space-x-5 justify-center items-center mt-8">
         <div className="flex p-8 lg:p-0 lg:mr-16 justify-center mt-12 lg:mt-0 flex-row lg:space-y-16 pr-28">
           <div className="flex  justify-start w-1/2 lg:w-auto lg:mr-6 flex-col-reverse space-x-6">
             <div className="flex  justify-end pr-2 lg:pr-0 relative bottom-4">
@@ -114,8 +120,8 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
