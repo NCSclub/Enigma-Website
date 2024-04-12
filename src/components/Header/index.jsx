@@ -2,7 +2,6 @@
 
 import Image from "next/image.js";
 import navbar from "./navbarContent.js";
-import Link from "next/link.js";
 import { motion } from "framer-motion";
 
 import { GrMenu } from "react-icons/gr";
@@ -17,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="w-screen px-10 py-7 h-[10vh]">
+    <nav id="navbar" className="w-screen px-10 py-7 h-[10vh]">
       <div className="flex justify-between items-center gap-8">
         <div>
           <Image
