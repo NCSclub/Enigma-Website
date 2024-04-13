@@ -6,7 +6,7 @@ import pic2 from "../../../public/images/AboutTheClubs/MacroPic.png";
 
 const AboutTheClubSection = () => {
   return (
-    <div className="w-screen flex flex-col items-center justify-center h-fit">
+    <div id="aboutTheClubs" className="w-screen flex flex-col items-center justify-center h-fit">
       <div className="h-20 w-96 bg-contain bg-no-repeat flex justify-center items-center bg-b-title text-white text-center">
         <h1 className="text-3xl font-text md:text-4xl">Contributors</h1>
       </div>
