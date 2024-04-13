@@ -28,7 +28,7 @@ const Header = () => {
           />
         </div>
         <div className=" max-lg:hidden">
-          <ul className="text-white font-text text-sm flex flex-row justify-center gap-10 relative right-12">
+          <ul className="text-white font-text text-base flex flex-row justify-center gap-10 relative right-12">
             {navbar.map((item) => (
               <motion.button
                 key={item.title}
