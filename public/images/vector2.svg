@@ -1,16 +1,16 @@
 <svg width="1000" height="1680" viewBox="0 0 1000 1680" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g style="mix-blend-mode:screen" filter="url(#filter0_f_103_753)">
-<path d="M-302.235 491.496C-210.721 536.609 168.611 916.459 437.574 863.69C706.537 810.921 169.125 1570.66 -76.0182 1429.19C-319.134 1288.89 -393.749 446.383 -302.235 491.496Z" fill="url(#paint0_linear_103_753)"/>
-</g>
-<defs>
-<filter id="filter0_f_103_753" x="-828.775" y="0.968262" width="1828.65" height="1934.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="244.391" result="effect1_foregroundBlur_103_753"/>
-</filter>
-<linearGradient id="paint0_linear_103_753" x1="383.608" y1="672.002" x2="-317.12" y2="1076.57" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF006B" stop-opacity="0.32"/>
-<stop offset="1" stop-color="#FF6DC1"/>
-</linearGradient>
-</defs>
+  <g style="mix-blend-mode:screen" filter="url(#filter0_f_103_753)">
+    <path d="M-302.235 491.496C-210.721 536.609 168.611 916.459 437.574 863.69C706.537 810.921 169.125 1570.66 -76.0182 1429.19C-319.134 1288.89 -393.749 446.383 -302.235 491.496Z" fill="url(#blueGradient)"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_103_753" x="-828.775" y="0.968262" width="1828.65" height="1934.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="244.391" result="effect1_foregroundBlur_103_753"/>
+    </filter>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C7E94;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 </svg>
