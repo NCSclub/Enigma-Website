@@ -18,18 +18,18 @@ import EnigmaLogo from "../../../public/images/Footer/EnigmaLogo.svg";
 
 const ClubsSocialMedia = [
   {
-    NcsLink: "/",
-    MarconicsLink: "/",
+    NcsLink: "https://www.linkedin.com/company/numidia-computer-society/",
+    MarconicsLink: "https://www.linkedin.com/company/marconics-club/",
     icon: <FontAwesomeIcon className="w-7 h-7" icon={faLinkedin} />,
   },
   {
-    NcsLink: "/",
-    MarconicsLink: "/",
+    NcsLink: "https://www.instagram.com/ncs._club/",
+    MarconicsLink: "https://www.instagram.com/marconics_ehec/",
     icon: <FontAwesomeIcon className="w-7 h-7" icon={faInstagram} />,
   },
   {
     NcsLink: "/",
-    MarconicsLink: "/",
+    MarconicsLink: "https://www.facebook.com/people/Marconics-club/",
     icon: <FontAwesomeIcon className="w-7 h-7" icon={faFacebook} />,
   },
 ];
