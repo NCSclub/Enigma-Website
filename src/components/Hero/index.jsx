@@ -75,7 +75,7 @@ const Hero = () => {
             </h1>
           </div>
           <div className="flex justify-end items-end lg:justify-start">
-            <Link target="_blank" href="https://tripetto.app/run/BFO62YXV93">
+            <Link target="_blank" href="/">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -104,7 +104,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex justify-start items-start pr-28 lg:pr-0 lg:justify-start">
-            <Link target="_blank" href="https://tripetto.app/run/F8Z3HGN1AM">
+            <Link target="_blank" href="/">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
