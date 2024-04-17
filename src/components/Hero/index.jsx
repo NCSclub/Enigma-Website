@@ -49,7 +49,7 @@ const Hero = () => {
           <Link
             className="flex justify-center items-center gap-6 "
             target="_blank"
-            href="https://maps.app.goo.gl/9Aeizen7VEjrkLD6A"
+            href="https://maps.app.goo.gl/2K1XzZzTBhtpRWny8?g_st=ic"
           >
             <GrMapLocation className="text-[40px] lg:text-[60px] cursor-pointer   " />
 
