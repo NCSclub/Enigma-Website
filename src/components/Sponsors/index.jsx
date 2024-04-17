@@ -6,12 +6,16 @@ const Sponsors = () => {
   const logosData = [
     { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
     { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://www.realistic-security.com/", path: "/images/sponsors/logo2.png", name:"Realistic security" },
     { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
     { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://www.realistic-security.com/", path: "/images/sponsors/logo2.png", name:"Realistic security" },
     { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
     { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://www.realistic-security.com/", path: "/images/sponsors/logo2.png", name:"Realistic security" },
     { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
     { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://www.realistic-security.com/", path: "/images/sponsors/logo2.png", name:"Realistic security" },
 
     // Add more links and paths as needed
   ];
