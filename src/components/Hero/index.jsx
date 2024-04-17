@@ -75,15 +75,16 @@ const Hero = () => {
             </h1>
           </div>
           <div className="flex justify-end items-end lg:justify-start">
-            <Link target="_blank" href="https://tripetto.app/run/BFO62YXV93">
+            <Link target="_blank" href="/">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className={`flex space-x-2 items-center bg-[#0598CE] p-4 rounded-xl text-3xl font-medium text-white 
          ${
            isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
-         } hover:bg-blue-500`}
-                disabled={isButtonDisabled}
+         } hover:bg-blue-500 opacity-50 cursor-not-allowed`}
+                /* add isButtonDisabled state later to the button and remove "opacity-50 cursor-not-allowed" */
+                disabled
               >
                 <span>Register</span> <FaArrowRight />
               </motion.button>
@@ -103,14 +104,15 @@ const Hero = () => {
             />
           </div>
           <div className="flex justify-start items-start pr-28 lg:pr-0 lg:justify-start">
-            <Link target="_blank" href="https://tripetto.app/run/F8Z3HGN1AM">
+            <Link target="_blank" href="/">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className={`  flex relative right-6 space-x-2 w-fit items-center bg-white p-4 rounded-xl text-3xl font-[600] text-[#0598CE] ${
                   isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
-                } hover:bg-blue-200`}
-                disabled={isButtonDisabled}
+                } hover:bg-blue-200 opacity-50 cursor-not-allowed`}
+                /* add isButtonDisabled state later to the button and remove "opacity-50 cursor-not-allowed" */
+                disabled
               >
                 <span>Register</span>
                 <div>

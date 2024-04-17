@@ -8,6 +8,20 @@ import Footer from "@/components/Footer";
 import AboutTheEventSection from "@/components/AboutTheEvent";
 
 export const metadata = {
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  creator: "Enigma Team",
+  keywords: [
+    "Enigma",
+    "challenges",
+    "Ideathon",
+    "talks",
+    "Startups",
+    "NCS",
+    "Macronics",
+  ],
   title: "Enigma",
   description:
     "Enigma is a Startup Extchange hosted in NIT by NCS & Marconics Club",
@@ -15,7 +29,7 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div className="overflow-hidden relative flex flex-col gap-32">
+    <main className="overflow-hidden relative flex flex-col gap-32">
       <div className="flex flex-col gap-32 bg-header-shadow bg-right-top bg-no-repeat">
         <div className="flex flex-col gap-12 ">
           <Header />
@@ -30,7 +44,7 @@ const Home = () => {
         <WhyWaitSection />
         <Footer />
       </div>
-    </div>
+    </main>
   );
 };
 

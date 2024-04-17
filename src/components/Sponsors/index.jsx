@@ -4,14 +4,14 @@ import Marquee from "react-fast-marquee";
 
 const Sponsors = () => {
   const logosData = [
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
-    { link: "", path: "/images/sponsors/logo1.png", name: "Enigma" },
+    { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
+    { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
+    { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
+    { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
+    { link: "https://la.saa.dz/", path: "/images/sponsors/saa.svg", name: "Société Nationale d'Assurance logo" },
+    { link: "https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/", path: "/images/sponsors/nitLogo.png", name: "Numidia Institute of Technology logo" },
 
     // Add more links and paths as needed
   ];
