@@ -65,7 +65,7 @@ const Footer = () => {
         <ul className="flex gap-7 max-lg:gap-2 justify-center items-center">
           {ClubsSocialMedia.map((social, index) => (
             <li key={index}>
-              <Link href={social.NcsLink}>{social.icon}</Link>
+              <Link href={social.MarconicsLink}>{social.icon}</Link>
             </li>
           ))}
         </ul>
