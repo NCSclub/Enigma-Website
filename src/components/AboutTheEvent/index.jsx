@@ -3,8 +3,8 @@ import Image from "next/image";
 const AboutTheEventSection = () => {
   return (
     <section id="aboutTheEvent" className="text-white">
-      <div className="bg-title-shadow mb-12 p-6 bg-center w-full bg-no-repeat h-full py-12">
-        <h1 className="text-center font-text text-4xl md:text-5xl font-semibold ">
+      <div className="bg-title-shadow mb-12 p-6 bg-center w-full bg-no-repeat h-full py-12 text-white text-center">
+        <h1 className="text-4xl font-text md:text-5xl font-semibold">
           About Enigma{" "}
         </h1>
       </div>
