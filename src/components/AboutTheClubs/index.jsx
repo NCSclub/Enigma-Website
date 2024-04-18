@@ -13,14 +13,14 @@ const AboutTheClubSection = () => {
       <div className="hidden md:grid grid-cols-2 gap-16 place-items-center">
         <Card
           logo={NCS}
-          desc="The NCS club aims to create an inclusive platform for tech enthusiasts to improve their skills and knowledge in computer science. They offer workshops, and collaborative projects, to foster growth."
+          desc="The NCS club is a student organization at Numidia Institute of Technology (NIT), that provides an inclusive platform for tech enthusiasts to boost their computer science skills. Through workshops and projects, they foster community growth."
           image={pic1}
           widthLogo={45}
           widthImage={335}
         />
         <Card
           logo={marconics}
-          desc="Marconics Club, founded in April 2023, is a non-profit organization preparing students for careers through company visits and events on entrepreneurship, marketing, and supply chain management."
+          desc="Marconics Club, founded in April 2023, is a non-profit organization based at the School of Commercial High Studies. It prepares students for careers through company visits and events on entrepreneurship, marketing, and supply chain management."
           image={pic2}
           widthLogo={60}
           widthImage={350}
