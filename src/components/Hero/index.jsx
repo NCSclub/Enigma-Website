@@ -8,16 +8,29 @@ import { FaArrowRight } from "react-icons/fa";
 import { GrMapLocation } from "react-icons/gr";
 import { motion } from "framer-motion";
 import CountdownTimer from "./CountDown";
+import Header from "../Header";
 
 
 
 const Hero = () => {
+
+
+
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-    <section id="hero" className="">
-      <div className="flex flex-col justify-center  lg:leading-[90px]">
-        <p className="flex flex-col  items-center lg:flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
+<section id="hero" className={`px-6 bg-opacity-25 w-full lg:pb-24  bg-center bg-no-repeat bg-cover duration-300 transition-opacity bg-[url('/images/hero/slider/pic1.png')] `} >
+
+
+<Header/>
+
+<div className="flex lg:mt-24 md:mt-12 mt-16 container mx-auto   flex-col items-center lg:justify-between justify-center ">
+
+
+
+ 
+      <div className="flex w-full h-full flex-col justify-center  lg:leading-[90px]">
+        <p className="flex flex-col   items-center lg:flex-row space-x-6 mb-4 justify-center text-white leading-non text-center font-bold">
           <span className="text-6xl lg:text-8xl font-title">Join the</span>
           <br/>
           <span className="text-[#0485B9] bg-blueborder bg-center text-center bg-no-repeat bg-contain lg:px-6 flex justify-center items-center">
@@ -118,7 +131,15 @@ const Hero = () => {
             </Link>
           </div>
         </div>
+
       </div>
+      <div className="mt-12 opacity-80 hover:opacity-100">
+      <Link href='https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/'>
+      <Image target="_blank" width={300} height={150} src='/images/sponsors/nit_logo.png'/>
+      </Link>
+      </div>
+      </div>
+      
     </section>
   );
 };
