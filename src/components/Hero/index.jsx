@@ -19,7 +19,7 @@ const Hero = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   return (
-<section id="hero" className={`px-6 bg-opacity-25 w-full lg:pb-24  bg-center bg-no-repeat bg-cover duration-300 transition-opacity bg-[url('/images/hero/slider/pic1.png')] `} >
+<section id="hero" className={`px-6 bg-opacity-25 w-full lg:pb-24  bg-center bg-no-repeat bg-cover duration-300 transition-opacity  lg:bg-[url('/images/hero/slider/pic1.png')] `} >
 
 
 <Header/>
