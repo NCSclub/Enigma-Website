@@ -133,7 +133,7 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className="mt-12 opacity-80 hover:opacity-100">
+      <div className="mt-12 ">
       <Link href='https://www.facebook.com/p/NIT-Numidia-Institute-of-Technology-100064208677225/'>
       <Image target="_blank" width={300} height={150} src='/images/sponsors/nit_logo.png'/>
       </Link>
