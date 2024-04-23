@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
       <div className="flex  flex-col lg:flex-row-reverse justify-center items-center gap-3 lg:gap-12 w-full lg:mt-[40px]">
         <div className={` lg:w-[40%]  ${isButtonDisabled ? " hidden" : "block"}`}>
-        <CountdownTimer setDisabled={setButtonDisabled} initialTime="2024-04-17" />
+        <CountdownTimer setDisabled={setButtonDisabled} initialTime="2024-04-23" />
         </div>
         <div className={!isButtonDisabled ? " hidden" : "block"}>
           <h1 className="text-[65px] text-center text-white font-bold  lg:text-[100px] ">
